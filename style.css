@@ -1,0 +1,232 @@
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    background-color: #F1F0E8; 
+}
+
+
+.nav-menu {
+    border: none;
+    background-color: #E5E1DA; 
+    font-size: 1.5rem;
+    color: #89A8B2;
+}
+
+
+.navbar-nav a {
+    color: #3F3D56;
+    position: relative;
+}
+
+.navbar-nav a:hover {
+    color: #89A8B2; 
+}
+
+.navbar-nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #89A8B2; 
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+.c-btn {
+    border: none;
+    background: #B3C8CF;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.home {
+    background: linear-gradient(33deg, #E5E1DA 0%, #F1F0E8 100%);
+    padding: 30px 0px 10px 0px;
+}
+
+.home h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.c-orange {
+    color: #89A8B2; 
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home p {
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #89A8B2;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #B3C8CF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover {
+    color: #B3C8CF;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.heading small {
+    color: #89A8B2;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    margin-top: 0.5rem;
+    color: #3F3D56;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.skill{
+    background-color: rgb(234, 234, 249);
+}
+.progress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+.progress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+.circular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.heading p{
+    font-size: 1.3rem;
+}
+
+.social-links button {
+    border: white;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links .linkedin {
+    color: #0077B5;
+}
+.social-links .linkedin:hover {
+    background-color: #63c2f6;
+    color: #fff;
+}
+
+.social-links .whatsapp {
+    color: #25D366;
+}
+.social-links .whatsapp:hover {
+    background-color: #25D366;
+    color: #fff;
+}
+
+.social-links .instagram {
+    color: #E4405F;
+}
+.social-links .instagram:hover {
+    background-color: #E4405F;
+    color: #fff;
+}
+
+
+.social-links button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #B3C8CF;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+
+footer {
+    background-color: #B3C8CF;
+}
